@@ -25,6 +25,7 @@ It is assumed that there will always be a safe path that the agent can take to e
 <hr>
 <h1>Sample Input and Output:</h1>
 # -*- coding: utf-8 -*-
+<pre><code>
 #Name : M.Suryakumar
 #Register Number : 212224040340
 """WUMPUS.ipynb
@@ -49,14 +50,19 @@ column = 0
 arrow = True
 player = True
 score = 0
+
+
+
 while(player):
+
     choice=input("press u to move up\npress d to move down\npress l to move left\npress r to move right\n")
     if choice == "u":
         if row != 0:
             row-=1
+            
         else:
             print("move denied")
-
+            
         print("current location: ",wumpus[row][column],"\n")
     elif choice == "d" :
         if row!=3:
@@ -151,7 +157,7 @@ while(player):
         score-=1000
         print("Ahhhhh!!!!\nYou fell in pit.\nAnd your score is: ",score,"\n")
         break
-
+</code></pre>
 <hr>
 
 ![image](https://github.com/natsaravanan/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/87870499/8696111a-a4a7-47cb-ba4b-43a4ef88573f)
